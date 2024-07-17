@@ -5,7 +5,8 @@
 1. Run the following on the Debian 12 VPS:
 
    ```bash
-   printf certbot --authenticator webroot --installer apache --register-unsafely-without-email
+   apt install certbot python3-certbot-apache -y
+   certbot --authenticator webroot --installer apache --register-unsafely-without-email
    ```
   - Agree to the terms, enter the domain(any.com) you linked earlier and enter the webroot /var/www/html
 
