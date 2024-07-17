@@ -1,6 +1,6 @@
 # Install on your own server
 
-0. Get a Debian 12 VPS and link a domain(any.com) to your server
+0. Get a Debian 12 VPS and link a domain(any.com) to your server and wait for it to propagate(https://www.whatsmydns.net/)
 
 1. Run the following on the Debian 12 VPS:
 
