@@ -1,4 +1,4 @@
-videoDemo.mp4
+./videoDemo.mp4
 
 # Preface
 
