@@ -8,5 +8,5 @@ sed -i -e '$ d' /etc/apache2/sites-enabled/000-default-le-ssl.conf && sed -i -e 
 printf "ProxyPass / http://localhost:3000/\nProxyPassReverse / http://localhost:3000/\n\n</VirtualHost>\n</IfModule>" >> /etc/apache2/sites-enabled/000-default-le-ssl.conf
 a2enmod proxy proxy_http
 systemctl restart apache2
-clear
+printf "\n\n\n\n\n\n\n"
 node index.js
