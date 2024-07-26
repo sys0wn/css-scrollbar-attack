@@ -45,7 +45,7 @@ for(let i = 1; i <=100; i++) {
 // of selectors with steadily increasing specificity as explained above
 
 let minSelectorToTarget = "willBeSetLater";
-const selectorArray = [];
+let selectorArray = [];
 
 // 100/3 = 33 chars exfiltratable
 
@@ -268,7 +268,6 @@ app.get("/start", (req, res) => {
     input = "";
     ttl = 0;
     selectorArray = [];
-    firstLetterExfilCSS = "willBeSetLater";
     displaySelectorArray = [];
     minDisplaySelector = "html:not(any0)";
     genResponse(res, ttl, chars);
