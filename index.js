@@ -267,8 +267,6 @@ app.get("/start", (req, res) => {
     chars = CHARSET;
     input = "";
     ttl = 0;
-    selectorArray = [];
-    displaySelectorArray = [];
     minDisplaySelector = "html:not(any0)";
     genResponse(res, ttl, chars);
 });
