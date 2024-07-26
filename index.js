@@ -217,7 +217,7 @@ function sleepAsync(milliseconds) {
 }
 
 
-// first request, reset everything
+// first request, reset everything in case one session is used for multiple exfiltrations and the server is not restarted using: node index.js
 app.get("/start", (req, res) => {
     log("===============================");
     ready = 1;
@@ -226,6 +226,10 @@ app.get("/start", (req, res) => {
     chars = CHARSET;
     input = "";
     ttl = 0;
+    selectorArray = [];
+    firstLetterExfilCSS = "willBeSetLater";
+    displaySelectorArray = [];
+    minDisplaySelector = "html:not(any0)";
     genResponse(res, ttl, chars);
 });
 
