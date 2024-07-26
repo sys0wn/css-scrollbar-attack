@@ -1,4 +1,4 @@
-githubDemo.mp4
+./githubDemo.mp4
 
 # Preface
 
