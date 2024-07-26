@@ -29,6 +29,8 @@ const WIDTH = '392px';
 //This is used to display the green results area. In order to see the exfiltration status live the selector has to keep getting more specific in order to override the css used before. This loop creates
 //selectors in the following way: html:not(any0) then html:not(any0):not(any1) html:not(any0):not(any1):not(any2). The specificity increases by 1 every time but the selector remains the same, as 
 //html:not(any1) basically means: "Select all html tags that don't have a <any1> tag as child. But there is no <any1> tag so the condition will always remain true.
+//Reference for CSS specificity: https://www.w3schools.com/css/css_specificity.asp, https://polypane.app/css-specificity-calculator/
+
 
 let displaySelectorArray = [];
 let minDisplaySelector = "html:not(any0)";
