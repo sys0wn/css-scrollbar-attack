@@ -8,7 +8,7 @@ Code is kinda janky and not well tested.
 
 1. Run the following as root on the Debian 12 VPS:
 ```bash
-apt install apache2 && certbot --authenticator webroot --installer apache --register-unsafely-without-email
+apt install apache2 certbot python3-certbot-apache -y && certbot --authenticator webroot --installer apache --register-unsafely-without-email
 ```
 and agree to the terms, enter your domain(any.com) and enter /var/www/html as webroot then run the following as root on the Debian 12 VPS:
 ```bash
