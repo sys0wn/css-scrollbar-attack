@@ -1,4 +1,4 @@
-apt install apache2 fontforge npm certbot python3-certbot-apache -y
+apt install fontforge npm -y
 npm install
 printf "\n\nPlease enter the domain name that is currently linked to this VPS (e.g example.com):"
 read domainName
