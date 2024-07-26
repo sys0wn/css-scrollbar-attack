@@ -114,4 +114,4 @@ Read the (kinda) documented source code (index.js)
 
 - If you face seemingly illogical errors while trying to reproduce this go to: ```chrome://settings/privacy``` and clean the cache(fonts are cached which might mess with the detection and exfiltration.
 
-# This repo is a fork of https://github.com/cgvwzq/css-scrollbar-attack which I have modified, improved and documented. Thanks to cgvwzq for the awesome code!
+# This repo is a fork of https://github.com/cgvwzq/css-scrollbar-attack which I have modified, improved and documented. Thanks to cgvwzq for the awesome code and thanks to @SecurityMB (https://sekurak.pl/wykradanie-danych-w-swietnym-stylu-czyli-jak-wykorzystac-css-y-do-atakow-na-webaplikacje/) for coming up with (part of) the idea (I think).
