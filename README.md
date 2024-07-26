@@ -7,7 +7,10 @@ Code is kinda janky and not well tested.
 0. Get a Debian 12 VPS(512MB RAM and 1 Core CPU was enough for me) and link a domain(any.com) to your server and wait for it to  propagate(https://www.whatsmydns.net/) (usually takes max 1hour depending on the ttl configured for your domain)
 
 1. Run the following as root on the Debian 12 VPS:
-
+```bash
+apt install apache2 && certbot --authenticator webroot --installer apache --register-unsafely-without-email
+```
+and agree to the terms, enter your domain(any.com) and enter /var/www/html as webroot then run the following as root on the Debian 12 VPS:
 ```bash
 apt install git -y && git clone https://github.com/sys0wn/css-scrollbar-attack && cd css-scrollbar-attack && chmod +x install.sh && bash install.sh
 ```
